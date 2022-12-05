@@ -1,93 +1,596 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title></title>
-		<style>
-			.wrapper {
-				width: 370px;
-				height: 200px;
-				border: 15px solid black;
-				border-image: radial-gradient(black,white,black, white,black,black) 1;
-				position: relative;
-			}
-		
-			/* 5张图片叠加到一块 */
-			.wrapper img {
-				width: 100%;
-				height: 100%;
-				position: absolute;
-				left: 0;
-				top: 0;
-				display: none;
-			}
-		
-			.wrapper img:nth-of-type(1) {
-				display: block;
-			}
-		
-			/* 小圆点 */
-			.btn {
-				width: 80px;
-				display: flex;
-				justify-content: space-around;
-				position: absolute;
-				left: 285px;
-				bottom: -14px;
-				z-index: 100
-			}
-		
-			.btn span {
-				display: block;
-				width: 5px;
-				height: 5px;
-				border: 3px solid white;
-				border-radius: 50%;
-			}
-		
-			/* 左右箭头 */
-			.wrapper a {
-				text-decoration: none;
-				font-size: 50px;
-				color: red;
-				position: absolute;
-				top: 35%;
-			}	
-			.active {
-				background-color: blue;
-			}
-		</style>
-        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.min.js"></script>
-	</head>
-	<body>
-		<div class="wrapper">
-			<div class="contain">
-				<img class="img666" src="./images1/W020110417320153842809.jpg" alt="">
-				<img class="img666" src="./images1/W020110417372214444705.jpg" alt="">
-				<img class="img666" src="./images1/W020110417358924996040.jpg" alt="">
-				<img class="img666" src="./images1/W020110417309440968483.jpg" alt="">
-				<img class="img666" src="./images1/W020110417312673166063.jpg" alt="">
-			</div>
-			<div class="btn">
-				<span class="active span666"></span>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./part3.css">
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+    </script>
+   
+</head>
+<body>
+    <div class="bigbox3">
+        <div class="trimidbox1">
+            <img src="./images1/img1/1.jpg" alt="">
+            <img src="./images1/img1/1.jpg" alt="">
+            <img src="./images1/img1/2.jpg" alt="">
+        </div>
+
+        <div class="trimidbox2">
+            <a href="#" class="white">首页</a>
+            <a href="#" class="white">苏网天气</a>
+            <a href="#" class="white">新华报业网</a>
+            <a href="#" class="white">扬子晚报网</a>
+
+            <span class="triblue1">用户名:</span><input type="" class="triinput1">
+            <span class="triblue2">密码:</span><input type="" class="triinput1">
+
+            <a href="#" class="btn2"><img style="margin-top: 6px;" src="./images1/img2/login_bbs.gif" alt=""></a>
+            <a href="#" class="btn2"><img src="./images1/img2/login_mail.gif" alt=""></a>
+            <a href="#" class="btn2"><img src="./images1/img2/login_reg.gif" alt=""></a>
+
+            <input type="text" class="triinput2">
+            <button style="width:40px">搜索</button>
+
+        </div>
+
+        <div class="trimidbox3">
+            <img class="center" src="./images1/img3/1.gif" alt="">
+
+            <img src="./images1/img3/index_zjs_02.png" alt="" class="seven">
+            <img src="./images1/img3/index_hms_01.png" alt="" class="seven">
+            <img src="./images1/img3/index_yjs_01.png" alt="" class="seven">
+            <img src="./images1/img3/index_zcf_01.png" alt="" class="seven">
+            <img src="./images1/img3/index_kwh_01.jpg" alt="" class="seven">
+            <img src="./images1/img3/index_hsh_01.jpg" alt="" class="seven">
+            <img src="./images1/img3/index_xfw_01.png" alt="" class="seven">
+        </div>
+
+        <div class="trimidBox4"></div>
+        <div class="trimidbox4"></div>
+
+        <div class="trimidbox5">
+            <div class="trilowbox5">
+                <img src="./images1/img6/index_zjs_02.png" alt="">
+
+                <div class="trilimbox5">
+                    <div class="sidebar">
+                        <div class="tri"></div><a href="#">即时播报</a>
+                    </div>
+                    <div class="sidebar">
+                        <div class="tri"></div><a href="#">今日江苏</a>
+                    </div>
+                    <div class="sidebar">
+                        <div class="tri"></div><a href="#">精读天下</a>
+                    </div>
+                    <div class="sidebar">
+                        <div class="tri"></div><a href="#">独家策划</a>
+                    </div>
+                    <div class="sidebar">
+                        <div class="tri"></div><a href="#">突发·目击</a>
+                    </div>
+                    <div class="sidebar">
+                        <div class="tri"></div><a href="#">江苏·政要</a>
+                    </div>
+                    <div class="sidebar">
+                        <div class="tri"></div><a href="#">苏网弹评</a>
+                    </div>
+                    <div class="sidebar">
+                        <div class="tri"></div><a href="#">苏网TV</a>
+                    </div>
+                    <div class="sidebar sidebar2">
+                        <div class="tri"></div><a href="#">读图时代</a>
+                    </div>
+                    <div class="sidebar sidebar2">
+                        <div class="tri"></div><a href="#">社会万象</a>
+                    </div>
+                    <div class="sidebar sidebar2">
+                        <div class="tri"></div><a href="#">军事天地</a>
+                    </div>
+                </div>
+
+                <img class="px8" src="./images1/img6/rexian.gif" alt="">
+                <img class="px12" src="./images1/img6/index_zjs_03.jpg" alt="">
+
+                <p class="blue3">
+                    <a href="#">网媒丽水行 |</a>
+                    <a href="#">公安部打拐</a>
+                </p>
+                <p class="blue3">
+                    <a href="#">染色馒头 |</a>
+                    <a href="#">中国千万富翁</a>
+                </p>
+                <p class="blue3">
+                    <a href="#">事业单位改革 |</a>
+                    <a href="#">网络公关</a>
+                </p>
+                <p class="blue3">
+                    <a href="#">男篮范斌 |</a>
+                    <a href="#">银行暂停房贷</a>
+                </p>
+                <p class="blue3">
+                    <a href="#">房价拐点 |</a>
+                    <a href="#">我与地震灾区</a>
+                </p>
+
+            </div>
+
+            <div class="trilowBox5">
+                <img class="xue" src="./images1/img6/W020110417424850708896.jpg" alt="">
+
+                <p class="three" style="text-align: center;">
+                    <a href="#" style="color:#0c50cb;">四川党政代表团来江苏考察 &nbsp;&nbsp;|&nbsp;&nbsp;</a>
+                    <a href="#" style="color:#0c50cb;"> 全国居住用地价格涨幅开始回落&nbsp;&nbsp;|&nbsp;&nbsp;</a>
+                    <a href="#" style="color:#0c50cb;"> 我省企业打赢国际官司产生多重效应|</a>
+                </p>
+    <div class="ttttt" style="display:flex;">
+                <div class="trilimBox5">
+                    <img src="./images1/img7/jishi.png" alt=""><br>
+
+                    <a href="#">[江苏]二季度宏观经济非常景气 指数升至0.54</a><br>
+                    <a href="#">[江苏]支援伊犁100个项目开工 26547家庭收益</a><br>
+                    <a href="#">[江苏]全国人大检查组将来江苏检查食品安全</a><br>
+                    <a href="#">[南京]5万多村民乘上“健康直通车”年交105元</a><br>
+                    <a href="#">[苏州]一季度新兴产业投资146.2亿元 民资过半</a><br>
+                    <a href="#">[海门]打造千亿级增长极 金花节签330亿元大单</a><br>
+                    <a href="#">[国内]周小川:适当收紧货币政策还将持续</a><br>
+                    <a href="#">[国内]沪红十字会通报“高额餐饮费”:非捐款</a><br>
+                    <a href="#">[国内]北京乡镇换届不论资排辈 班子须配”80</a><br>
+                    <a href="#">[国内]未来3天江南有较强降水 北方风沙降温</a><br>
+                    <a href="#">[国际]英法称“弹药不足” 呼吁美国在空袭利比</a><br>
+                    <a href="#">[国际]古巴14年来首开党会 改革将何去何从？</a><br>
+                    <a href="#">[国际]东电公司向海洋排放逾万吨低放射性污水</a><br>
+                    <a href="#">[南京]名校生源多 教师变“侦探”进行入学调查</a><br>
+                    <a href="#">[南京]卡子门等3个进出通道周末堵成“重灾区”</a><br>
+                    <a href="#">[南京]双休日仅两家楼盘开盘 江北片区动真格</a><br>
+                    <img src="./images1/img7/tianxia.png" alt="">
+                <div style="margin-top: 0px;">
+                <span style="color:#0c50cb; line-height: 24px;font-weight: bold">&nbsp;&nbsp;&nbsp;中国千万富豪有多少？</span><br>
+                   <div style="display:flex;">
+                <img class="fuhao" src="./images1/img7/fuhao.jpg" alt="">
+                <div class="rrred">
+                <pre style="color:#0c50cb; line-height: 24px; border-bottom: 1px dotted blue;height: 90px;">    中国千万富豪达96万人，相比
+去年增长9.7%，其中包括6万个亿万
+富豪，比去年增长9.1%.
+</pre>
+<a class="gray" href="#"  font-size: 14px; line-height: 24px;">今晨热点：毒生姜 入殓师</a><br/>
+<a class="gray" href="#" font-size: 14px; line-height: 24px;">新国十条满周年：降VS不降</a>
+</div>
+</div>
+            </div>
+    </div>
+
+    <div class="aaaaaa" style="display:flex;margin-left: 2px;">
+
+        <div class="b33333" style=" ">
+            <div class="c111" style="margin-top: 10px; ">
+                <img src="./images1/focus.jpg" alt="">
+            </div>
+
+            <div class="c222" style=" background-image: url(./images1/index_zxw_17.jpg); height:51px;width: 370px; ">
+                <div class="tritopbar">
+                    <div id="tritbar1" class="tritbar tritbar2"><a href="javascript:void(0);">独家策划</a></div>
+                    <div id="tritbar2" class="tritbar"><a href="javascript:void(0);">突发·目击</a></div>
+                </div>
+            </div>
+
+            <div class="c333" style=" background-image: url(./images1/index_zxw_18.jpg);height:200px;;width: 370px;">
+                <div class="tritext" style=" background-color: white;margin:8px;margin-top:0px;padding: 5px;height: 190px;">
+                    <img style="position:absolute; " src="./images1/W020110416356757243035.jpg" alt="">
+                    <a href="#" style="color:#0c50cb;margin-left: 150px;"><b>珍惜援建成果 绵竹奋进崛起</b></a>
+                    <pre style="color:#0c50cb; line-height: 20px;margin-left: 150px;">    生机勃勃的绵竹新城已经坚强
+崛起。在浴火重生的绵竹大地上，
+ 最灿烂的是群众的笑脸……
+                                    </pre>
+                    <div style="border-top: 1px dotted gray;border-bottom: 1px dotted gray;"><a style="color:#0c50cb; line-height: 30px;">李毅中在宁辟谣“三网融合夭折”传闻</a></div>
+                    <div style="border-bottom: 1px dotted gray;"><a style="color:#0c50cb; line-height: 30px;">公益项目要招商 南京过江水上巴士恐怕要黄了</a></div>
+                    
+                </div>
+                <div class="yyyyyyy" style="margin-top: 15px;height: 30px;background-image: url(./images1/index_zjs_14.png);; ">
+                
+                </div>
+            </div>
+                <div class="wrapper">
+                    <div class="contain">
+                        <img class="img666" src="./images1/W020110417320153842809.jpg" alt="">
+                        <img class="img666" src="./images1/W020110417372214444705.jpg" alt="">
+                        <img class="img666" src="./images1/W020110417358924996040.jpg" alt="">
+                        <img class="img666" src="./images1/W020110417309440968483.jpg" alt="">
+                        <img class="img666" src="./images1/W020110417312673166063.jpg" alt="">
+                    </div>
+                    <div class="btn">
+                        <span class="active span666"></span>
 				<span class="span666"></span>
 				<span class="span666"></span>
 				<span class="span666"></span>
 				<span class="span666"></span>
-			</div>
-		</div>
-		<script>
-			var trindex=0;
-		
-			// 悬浮停止
-			$(".wrapper").mouseover(function(){
-				clearInterval(id);
-			});
-			$(".wrapper").mouseout(function(){
-					autoplay();
-			})
-			
-			
+                    </div>
+                </div>
+
+
+        </div>
+
+
+        <div class="b44444" style="margin-top: 10px;margin-left: 2px;">
+            <img style="height: 34px;width:136px;" src="./images1/w111.png" alt="">
+            <div style="border-left:1px solid #cdcdcd;border-bottom:1px solid #cdcdcd;">
+                <a style="color: #51a452;font-weight: bold;" href="#">· 评论</a><br/>
+                <a class="rrred" style="" href="#">· 从“工”到“工人”，路还有多远</a><br/>
+                <a class="rrred" style="" href="#">· 小学校长参政国事教育真正垫起基石</a><br/>
+                <a class="rrred" style="" href="#">· 官员不作为就是一种腐败</a><br/>
+                <a style="color: #51a452;font-weight: bold;" href="#">· 热帖</a><br/>
+                <a class="rrred" style="" href="#">· 你的车买到现在，花了你多少银子?</a><br/>
+                <a class="rrred" style="" href="#">· CPI5.4%如何让人敢花钱?需迈三道坎</a><br/>
+                <a class="rrred" style="" href="#">· 恶搞视频:UFO里的外星人长啥样?</a><br/>
+                <a class="rrred" style="" href="#">· 关于南京热死人的个性签名</a>
+            </div>
+            <img src="./images1/equ.png" alt="">
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+</div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="bigbox2">
+<div class="secmidbox1">
+    <img id="secpic1" src="./images1/lgzz.jpg">
+    <img id="secpic2" src="./images1/ad_hqn_500X60.jpg">
+</div>
+<div class="secmidbox2">
+    <div class="secsmallbox1">
+        <img id="secpic1" src="./images1/index_hms_01.png">
+        <div class="seclowbox2">
+            <div class="sidebar"><div class="tri"></div><a href="#">问政民意台</a></div>
+            <div class="sidebar"><div class="tri"></div><a href="#">计策江苏</a></div>
+            <div class="sidebar"><div class="tri"></div><a href="#">维权帮帮帮</a></div>
+            <div class="sidebar"><div class="tri"></div><a href="#">本网调查</a></div>
+            <div class="sidebar"><div class="tri"></div><a href="#">舆情播报站</a></div>
+            <div class="sidebar sidebar2"><div class="tri"></div><a href="#">晨报互动</a></div>
+        </div>
+        <div class="seclowbox3">
+            <div class="secashbox1">
+            <span class="green">论坛登录</span>
+            <span class="gray">FORUM LOGIN</span>
+            <div>用户名：<input class="secusername" /></div>
+            <div> 密 码:<input class="secpassword" style="margin-left:20px;"/></div>
+
+            </div>
+            <div class="secashbox2">
+                <img id="secpic3" src="./images1/index_41.jpg">
+                <img id="secpic4"style="margin-left:5px;" src="./images1/index_42.jpg">
+            </div>
+        </div>
+        <img class="secpic5" src="./images1/phone.png">
+    </div>
+    <div class="secsmallbox2">
+        <div class="seclowbox4">
+            <img id="sectbar1" class="sectbar sectbar2" src="./images1/index_hms_02.jpg">
+            <img id="sectbar2" class="sectbar" src="./images1/index_hms_03.jpg">
+        </div>
+        <div class="seclowbox5">
+            <div class="secashbox3 rrred">
+                <b style="color:#0c50cb;line-height: 32px;">[问]</b><a class="blue4" href="#">想了解今年南外的招生政策</a><br/>
+                <b style="color:#0c50cb;line-height: 32px;">[答]</b><a class="gray" href="#" style="">“小升初”摇号时间确定在6月19号。</a><br/>
+                <b style="color:#0c50cb;line-height: 32px;">[问]</b><a class="blue4" href="#">物业公司预收水电费是否合理</a><br/>
+                <b style="color:#0c50cb;line-height: 32px;">[答]</b><a class="gray" href="#" style="">南京市物业服务收费管理实施办法》未对</a><br/>
+            </div>
+            <div class="secashbox4">
+                <a href="#">全球变暖城市未准备好设法让内河水活起来</a><br/>
+                <a href="#">浦口卫生状况需改观公交行业困境之我见</a><br/>
+                <a href="#">学前教育免费，南京开了好头，房屋强拆何时</a><br/>
+                <a href="#">请官员实行情人实名制 南京公交专用道欠账</a><br/>
+            </div>
+        </div>
+        <div class="seclowbox6">
+            <img id="secpic8" src="./images1/ad_index_5.jpg">
+            <img id="secpic9" style="margin-left:10px;" src="./images1/index_96.jpg">
+        </div>
+        <div class="seclowbox7">
+            <div class="secashbox5">
+                <div class="seckasabox1">
+                    <a class="red" style="line-height: 46px; margin-left: 35px;"><b>维权帮帮帮</b></a>
+                    <img  style="margin-left: 126px;"src="./images1/index_more.gif">
+                    <a class="red" style="line-height: 46px;"><b>本网追踪</b></a>
+                    <img  style="margin-left: 146px;"src="./images1/index_more.gif">
+                </div>
+                <div class="seckasabox2">
+                    <div class="secqqbox1">
+                        <img src="./images1/W020110415408320206905.jpg">
+        <a class="rrred" href="#" style="color:#0c50cb; padding: 11px;"><b>何时能叫停初中招生中的不光彩行为</b></a>
+            <pre style="color:#0c50cb; line-height: 24px;">    新城初中每年在小升初招生中所搞的小动
+作，其实也不算高明：分批分次地、小范围地
+通知一些优秀生源去新城初中面试。每年春节
+后就开始，一批一批地筛选，持续到六月底。
+其他学校也会这种手法，只是校长不太牛。
+            </pre>
+                    </div>
+                    <div class="secqqbox2">
+            <a class="gray" href="#">锁金地区街巷出新能按公示时间完成</a><br/>
+            <a class="gray" href="#">为什么肚带营一直没有出新计划?</a><br/>
+            <a class="gray" href="#">浦口明发滨江新城一期有大量的违建</a><br/>
+            <a class="gray" href="#">退休教师住房补贴至今没有消息?</a><br/>
+            <img  style="margin-left: 206px;"src="./images1/index_more.gif">
+            <a class="red" style="margin-left: 0px;"><b>回应排行</b></a><br/><br/>
+            <a class="gray" href="#">江宁区禄口星汉城小区物业管理费问题</a><br/>
+            <a class="gray" href="#">堂子街65号金灿旧助力车经营部</a><br/>
+            <a class="gray" href="#">凤凰街路东慢车道修的有危险</a><br/>
+            <a class="gray" href="#">目前绕城公路的现状还收费15合理吗?</a><br/>
+           </div>
+                </div>
+                <div class="seckasabox3">
+                </div>
+
+            </div>
+            <div class="secashbox6">
+                <div class="seckasabox4">
+                    <img style="margin-left: 10px;" src="./images1/index_jt.jpg">
+                    <a class="red" style="margin-left: 8px; line-height: 24px;"><b>权威提示</b></a> 
+                    <img style="margin-left: 136px;" src="./images1/index_more.gif"> 
+                    <a class="gray" href="#">南京二套房利率最高上浮21%</a><br/>
+                    <a class="gray" href="#">全省物价补贴改为按市发放</a><br/>
+                    <a class="gray" href="#">“五一”期间汽车票可以买了</a><br/>
+                    <a class="gray" href="#">个税改革后将少缴多少税?</a><br/>
+                    <a class="gray" href="#">沪宁城际将降速降价</a><br/>
+                    <img style="margin-left: 10px;" src="./images1/index_jt.jpg">
+                    <a class="red" style="margin-left: 8px; line-height: 24px;"><b>本网调查</b></a> 
+                    <img style="margin-left: 136px;" src="./images1/index_more.gif"> 
+                </div>
+                <div class="seckasabox5" style="font-size: 12px;margin-left: 3px; line-height: 20px;">
+                     成都推出“公务自行车3公里内办事不派车”<br/>
+                    <input type="radio" /> 支持，环保节约又健身<br/>
+                    <input type="radio" /> 反对，三公里外也能骑车<br/>
+                    <input type="radio" /> 质疑，公车数量是否降<br/>
+                    <input type="button" value="提交" style="width:70px; margin-left: 50px;">
+                    <input type="button" value="查看" style="width:70px; margin-left: 20px;">
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    <div class="secsmallbox2">
+        
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+<div class="bigbox1">
+    <div class="midbox1">
+        <img id="pic1" src="./images1/index_yjs_01.png">
+        <div class="smallbox1">
+             <a href="#"class="red"><b>市县热点</b></a> 
+             <span class="lowbox1">
+                <a href="#">南京</a> <a href="#">无锡</a> <a href="#">徐州</a>
+                <a href="#">常州</a> <a href="#">苏州</a> <a href="#">南通</a>
+                <a href="#">连云港</a> <a href="#">淮安</a> <a href="#">盐城</a>
+                <a href="#">扬州</a> <a href="#">镇江</a> <a href="#">泰州</a>
+                <a href="#">宿迁</a> 
+             </span> 
+        </div>
+    </div>
+    <div class="midbox2">      
+        <div class="smallbox2">
+            <div class="lowbox2">
+<div class="sidebar"><div class="tri"></div><a href="#">市县热点</a></div>
+<div class="sidebar"><div class="tri"></div><a href="#">媒眼看江苏</a></div>
+<div class="sidebar"><div class="tri"></div><a href="#">法制江苏</a></div>
+<div class="sidebar"><div class="tri"></div><a href="#">拍客圈</a></div>
+<div class="sidebar"><div class="tri"></div><a href="#">史话·传奇</a></div>
+<div class="sidebar"><div class="tri"></div><a href="#">节庆·会展</a></div>
+<div class="sidebar"><div class="tri"></div><a href="#">博乐园</a></div>
+<div class="sidebar"><div class="tri"></div><a href="#">新华报业数字阅读</a></div>
+<div class="sidebar sidebar2"><div class="tri"></div><a href="#">市县媒体网群</a></div>
+            </div>
+        </div>
+        <div class="smallbox3">
+            <div class="lowbox3">
+                <img id="pic3" src="./images1/W020110417356905346683.jpg">
+                    <div class="limbox1">
+                        <a href="#" class="blue"><b>南航南京“海选”空乘</b></a> 
+                        <pre>    昨日，南航第六届中国新空乘招募大会之澳洲总动员在
+南京拉开帷幕。
+                        </pre>
+                    </div>
+                    <div class="limbox2">
+                        <a href="#">［苏州］新兴产业投资增近三成</a><br/>
+                        <a href="#">［徐州］徐州师范大学新增16个硕士点</a><br/>
+                        <a href="#">［无锡］医疗服务惠民“锡版”举措出台</a><br/>
+                        <a href="#">［南通］海门金花节“吸金”330亿元</a><br/>
+                    </div>
+            </div>
+
+            <div class="lowbox4">
+                <img id="pic4" src="./images1/index_jt.jpg">
+                <a class="red"><b>媒眼看江苏</b></a> 
+                <img id="pic5" src="./images1/index_more.gif">
+                <img id="pic6" src="./images1/index_jt.jpg">
+                <a class="red"><b>法制江苏</b></a> 
+                <img id="pic7" src="./images1/index_more.gif">  
+            </div>
+            <div class="lowbox5">
+                <div class="limbox3">
+                    <a href="#">［人民日报］江苏洪泽“退围还湖”近6万亩</a><br/>
+                    <a href="#">［新华网］第七届中国双黄鸭蛋节在江苏高邮开幕</a><br/>
+                    <a href="#">［中国日报］南京客炒澳洲房产 三年赚了上百万</a><br/>
+                    <a href="#">［中国新闻网］江苏3月CPI同比增5.6％“吃妆价涨幅首次变</a><br/>
+                </div>
+                <div class="limbox4">
+                    <a href="#">“机械加工厂”竟产出山寨农药</a><br/>
+                    <a href="#">逃犯利用相似长相 冒充弟弟逃亡12年</a><br/>
+                    <a href="#">民警传授女教师防身术</a><br/>
+                    <a href="#">“法律明白人”成欢墩和谐建设主力</a><br/>
+                </div>
+            </div>
+            <div class="lowbox6">
+                <div class="limbox5">
+                    <div class="ashbox1">
+                <img id="pic8" src="./images1/index_jt.jpg">
+                <a class="red"><b>拍客圈</b></a> 
+                <img id="pic9" src="./images1/index_more.gif">    
+                    </div>
+                    <div class="ashbox2">
+                        <img class="picture" src="./images1/W020110415334869058056.jpg">
+                        <img class="picture" src="./images1/W020110415334465702210.jpg">
+                        <img class="picture" src="./images1/W020110415333958992319.jpg">
+                        <img class="picture" src="./images1/W020110415333684680874.jpg">
+                        <img class="picture" src="./images1/W020110415333174148968.jpg">
+                        <img class="picture" src="./images1/W020110415332769347045.jpg">
+                        <img class="picture" src="./images1/W020110415330659033493.jpg">
+                        <img class="picture" src="./images1/W020110415329969962816.jpg">
+                        <img class="picture" src="./images1/W020110415329192143671.jpg">
+                        <img class="picture" src="./images1/W020110415328873773471.jpg">
+                    </div>
+                    <div class="ashbox1">
+                        <img id="pic10" src="./images1/index_jt.jpg">
+                        <a class="red"><b>史话·传奇</b></a> 
+                        <a class="red2">传奇 | 轶事 | 人物</a> 
+                        <img id="pic11" src="./images1/index_more.gif">    
+                    </div>
+                    <div class="ashbox3">
+                        <a class="a2" href="#">曹雪芹</a>  <a class="a2" href="#">冯梦龙</a> 
+                        <a class="a2" href="#">范仲淹</a>  <a class="a2" href="#">顾炎武</a> 
+                        <a class="a2" href="#">华罗庚</a>  <a class="a2" href="#">刘邦</a> 
+                        <a class="a2" href="#">柳如是</a>  <a class="a2" href="#">刘秀</a> 
+                        <a class="a2" href="#">沈括</a>    <a class="a2" href="#">唐寅</a> 
+                        <a class="a2" href="#">伍子胥</a>  <a class="a2" href="#">叶圣陶</a> 
+                        <a class="a2" href="#">祖冲之</a>  <a class="a2" href="#">张旭</a> 
+                        <a class="a2" href="#">朱元璋</a> 
+                   </div>
+                   <div class="ashbox1">
+                    <img id="pic8" src="./images1/index_jt.jpg">
+                    <a class="red"><b>节庆·会展</b></a> 
+                    <img id="pic9" src="./images1/index_more.gif"> 
+                   </div>
+                   <div class="ashbox4">
+                    <a class="a3">首届“扬州漆器”精品拍卖</a>  <a class="a3">苏州：旅游节赛博会齐狂</a> 
+                    <a class="a3">苏州国际旅游节下周四开</a>  <a class="a3">“同里之春”打出文化组合</a> 
+                    </div>
+                    <div class="ashbox1">
+                        <img id="pic8" src="./images1/index_jt.jpg">
+                        <a class="red"><b>博乐园</b></a> 
+                        <img id="pic9" src="./images1/index_more.gif"> 
+                    </div>
+               </div>
+                <div class="limbox6">
+                    <div class="ashbox5">
+                        <img id="pic12" src="./images1/W020110415329768674482.jpg">
+                    </div>
+                    <div class="ashbox6">
+                        <div class="kasbox1">
+                            <a class="blue2" href="#"><b>新华报业数字阅读</b></a> 
+                            <span class="sp1"><a class="red3" href="#">新华报业网</a> 
+                            <a class="red3" href="#">杨子晚报网</a> </span>
+                        </div>
+                        <div class="kasbox2">
+                            <div class="qqbox1">
+                             <img id="pic13" src="./images1/index_97.jpg">
+                             <img id="pic14" src="./images1/yzwb.png">
+                             <img id="pic15" src="./images1/W020110417272424969583.jpg">
+                             <img id="pic16" src="./images1/W020110417272549248549.jpg">
+                            </div>
+                            <div class="qqbox2">
+                                <div class="boxb"><img  src="../web/images1/prev.gif"></div>
+                                <div class="wrap">     
+                                <div id="pica1" class="boxa"><img  src="../web/images1/njcb.jpg"></div>
+                                <div id="pica2" class="boxa"><img  src="../web/images1/jsjjb.jpg"></div>
+                                <div id="pica3" class="boxa"><img  src="../web/images1/cmgc.jpg"></div>
+                                <div id="pica4" class="boxa"><img  src="../web/images1/jnsb.png"></div>
+                                <div id="pica5" class="boxa"><img  src="../web/images1/qzw.jpg"></div>
+                                <div id="pica6" class="boxa"><img  src="../web/images1/jsfzb.jpg"></div>
+                                </div>
+                                <div class="boxb"><img  src="../web/images1/next.gif"></div>
+                            </div>
+                        </div>
+                        <div class="kasbox3">
+                            <a class="blue2" href="#"><b>市县媒体网群</b></a> 
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+     
+
+    </div>
+
+    <div class="midbox3">
+        <div class="topbar">
+            <div id="tbar1" class="tbar tbar2"><a href="javascript:void(0);">地方网联</a></div>
+            <div id="tbar2" class="tbar"><a href="javascript:void(0);">中央网联</a></div>
+            <div id="tbar3" class="tbar"><a href="javascript:void(0);">江苏县市政府网站</a></div>
+        </div>
+        <div class="maintext1">
+<a href="#">东方网</a>     <a href="#">南方网</a> <a href="#">北方网</a>     <a href="#">大众网</a> 
+<a href="#">千龙网</a>     <a href="#">西部网</a> <a href="#">浙江在线</a>   <a  href="#">每日甘肃</a> 
+<a href="#">中国江西</a>   <a href="#">中国江苏网</a> <a href="#">东北新闻网</a> <a  href="#">黄河新闻网</a> 
+<a href="#">河南报业网</a> <a href="#">山西新闻网</a> <a href="#">江西文明网</a> <a  href="#">中国西藏新闻网</a> </br> 
+<a href="#">东北网</a>     <a href="#">南海网</a> <a href="#">北国网</a>     <a  href="#">大河网</a> 
+<a href="#">华龙网</a>     <a href="#">大洋网</a> <a href="#">中安在线</a>   <a  href="#">安徽在线</a> 
+<a href="#">四川在线</a>   <a href="#">四川新闻网</a> <a href="#">大连天健网</a> <a  href="#">宁夏新闻网</a> 
+<a href="#">青海新闻网</a> <a href="#">中国西部网</a> <a href="#">中国山东网</a> <a href="#">福建东南新闻网</a>  </br> <a href="#">天山网</a> <a href="#">荆楚网</a> <a href="#">北青网</a>
+<a href="#">大江网</a> <a href="#">云南网</a> <a href="#">看中国</a> <a href="#">金黔在线</a>
+<a href="#">北方热线</a> <a href="#">胶东在线</a> <a href="#">新华报业网</a> <a href="#">广西新闻网</a>
+<a href="#">伊型新闻网</a> <a href="#">廊坊新闻网</a> <a href="#">中国甘肃网</a> <a href="#">中国吉林</a>
+<a href="#">长城</a>  <a href="#">网</a> <a href="#">内蒙古新闻网</a> </br> <a href="#">红网</a> <a href="#">华商网</a> <a href="#">今视网</a> <a href="#">延边新闻网</a>
+<a href="#">河北新闻网</a> <a href="#">中国西藏网</a> </br> <a href="#">吉林新闻网</a>
+        </div>
+        <div class="copyright">
+            <a> <img src="./images1/index_logo.jpg"> </a>
+            <a>网站简介  |  广告服务  |  网站律师  ｜  网站地图  |  联系方式</a>
+            <a style="color:black">中国江苏网（江苏中江网传媒股份有限公司）版权所有</a>
+            <a>国新网许可证3212006001号      苏ICP备07000608号      视听节目许可证1008318号</a>
+        </div>
+
+    </div>
+   
+</div>
+
+
+<script>
+    $(document).ready(function(){
+var index=-1;
+var i=114;
+var str1="translateX(-114px)";
+document.getElementById("pica1").addEventListener("transitionend",start2);
+document.getElementById("pica2").addEventListener("transitionend",start2);
+document.getElementById("pica3").addEventListener("transitionend",start2);
+document.getElementById("pica4").addEventListener("transitionend",start2);
+document.getElementById("pica5").addEventListener("transitionend",start2);
+document.getElementById("pica6").addEventListener("transitionend",start2);
+autoplay2();
+autoplay();
+var trindex=0;		
 			// 下一张
 			function next_pic(){
 				trindex++;
@@ -116,13 +619,153 @@
 			
 			// 自动轮播
 			var id;
-			autoplay();
+	
 			function autoplay(){
 				id=setInterval(function(){
 					next_pic();
-				},2000)
+				},2500)
 			}
-			
-		</script>
-	</body>
+function start(){
+    $(".boxa").css("transform",str1);
+   /* $(".box").eq(index).animate({left:'+=684px'},0);*/
+    index++;i+=114;
+	str1="translateX(-"+i+"px)";
+    if (index>5) {index=0;}
+}
+function start2() {
+    $(".boxa").eq(index).animate({left:'+=114px'},0);
+}
+function autoplay2() {
+    setInterval(function(){start();}, 2500);
+}
+        $(".tbar").click(function(){
+           $(".tbar2").toggleClass("tbar2")
+           $(this).toggleClass("tbar2");
+           change(this.id);
+      });   /*toggle没有就加上一个 有就删掉*/
+      $(".tritbar").click(function(){
+           $(".tritbar2").toggleClass("tritbar2")
+           $(this).toggleClass("tritbar2");
+           trichange(this.id);
+      });   /*toggle没有就加上一个 有就删掉*/
+      function trichange(str){
+        if (str=="tritbar1"){
+      $(".tritext").html(`<img style="position:absolute; " src="./images1/W020110416356757243035.jpg" alt="">
+                <a href="#" style="color:#0c50cb;margin-left: 150px;"><b>珍惜援建成果 绵竹奋进崛起</b></a>
+                <pre style="color:#0c50cb; line-height: 20px;margin-left: 150px;">    生机勃勃的绵竹新城已经坚强
+崛起。在浴火重生的绵竹大地上，
+最灿烂的是群众的笑脸……
+                                </pre>
+<div style="border-top: 1px dotted gray;border-bottom: 1px dotted gray;"><a style="color:#0c50cb; line-height: 30px;">李毅中在宁辟谣“三网融合夭折”传闻</a></div>
+<div style="border-bottom: 1px dotted gray;"><a style="color:#0c50cb; line-height: 30px;">公益项目要招商 南京过江水上巴士恐怕要黄了</a></div>
+`)
+      }
+      if (str=="tritbar2"){
+      $(".tritext").html(`<img style="position:absolute; " src="./images1/W020110416360430894969.jpg" alt="">
+                <a href="#" style="color:#0c50cb;margin-left: 150px;"><b>半夜开吊车上山偷大树</b></a>
+                <pre style="color:#0c50cb; line-height: 20px;margin-left: 150px;">    附近居民报警，十余人闻讯逃
+离现场，大卡和吊机被暂扣。因无
+法出具手续，私自挖掘涉嫌盗窃。
+                                </pre>
+<div style="border-top: 1px dotted gray;border-bottom: 1px dotted gray;"><a style="color:#0c50cb; line-height: 30px;">动物保护志愿者高速路拦运狗车阻止杀狗（图）</a></div>
+<div style="border-bottom: 1px dotted gray;"><a style="color:#0c50cb; line-height: 30px;">取出5万慢慢存 每次存10元折腾几小时</a></div>
+`)
+      }
+    }
+
+$(".tbar").click(function(){
+           $(".tbar2").toggleClass("tbar2")
+           $(this).toggleClass("tbar2");
+           change(this.id);
+      });   /*toggle没有就加上一个 有就删掉*/
+      $(".sectbar").click(function(){
+           $(".sectbar2").toggleClass("sectbar2")
+           $(this).toggleClass("sectbar2");
+           secchange(this.id);
+      });   /*toggle没有就加上一个 有就删掉*/
+      $(".tritbar").click(function(){
+           $(".tritbar2").toggleClass("tritbar2")
+           $(this).toggleClass("tritbar2");
+           trichange(this.id);
+      });   /*toggle没有就加上一个 有就删掉*/
+      function trichange(str){
+        if (str=="tritbar1"){
+      $(".tritext").html(`<img style="position:absolute; " src="./images1/W020110416356757243035.jpg" alt="">
+                <a href="#" style="color:#0c50cb;margin-left: 150px;"><b>珍惜援建成果 绵竹奋进崛起</b></a>
+                <pre style="color:#0c50cb; line-height: 20px;margin-left: 150px;">    生机勃勃的绵竹新城已经坚强
+崛起。在浴火重生的绵竹大地上，
+最灿烂的是群众的笑脸……
+                                </pre>
+<div style="border-top: 1px dotted gray;border-bottom: 1px dotted gray;"><a style="color:#0c50cb; line-height: 30px;">李毅中在宁辟谣“三网融合夭折”传闻</a></div>
+<div style="border-bottom: 1px dotted gray;"><a style="color:#0c50cb; line-height: 30px;">公益项目要招商 南京过江水上巴士恐怕要黄了</a></div>
+`)
+      }
+      if (str=="tritbar2"){
+      $(".tritext").html(`<img style="position:absolute; " src="./images1/W020110416360430894969.jpg" alt="">
+                <a href="#" style="color:#0c50cb;margin-left: 150px;"><b>半夜开吊车上山偷大树</b></a>
+                <pre style="color:#0c50cb; line-height: 20px;margin-left: 150px;">    附近居民报警，十余人闻讯逃
+离现场，大卡和吊机被暂扣。因无
+法出具手续，私自挖掘涉嫌盗窃。
+                                </pre>
+<div style="border-top: 1px dotted gray;border-bottom: 1px dotted gray;"><a style="color:#0c50cb; line-height: 30px;">动物保护志愿者高速路拦运狗车阻止杀狗（图）</a></div>
+<div style="border-bottom: 1px dotted gray;"><a style="color:#0c50cb; line-height: 30px;">取出5万慢慢存 每次存10元折腾几小时</a></div>
+`)
+      }
+    }
+    function secchange(str){
+    if (str=="sectbar1"){
+      $(".secashbox4").html(`<a href="#">全球变暖城市未准备好设法让内河水活起来</a><br/>
+                <a href="#">浦口卫生状况需改观公交行业困境之我见</a><br/>
+                <a href="#">学前教育免费，南京开了好头，房屋强拆何时</a><br/>
+                <a href="#">请官员实行情人实名制 南京公交专用道欠账</a><br/>
+`)
+      }
+      if (str=="sectbar2"){
+      $(".secashbox4").html(`<a href="#">佛罗里达师范大学有望提前放寒假</a><br/>
+                <a href="#">佛罗里达西医药大学提前放寒假</a><br/>
+                <a href="#">佛罗里达州立大学有望提前放寒假</a><br/>
+                <a href="#">佛罗里达医科大学有望提前放寒假</a><br/>
+`)
+      }
+    }
+
+      function change(str){
+        if (str=="tbar1"){
+      $(".maintext1").html('<a href="#">东方网</a>     <a href="#">南方网</a> <a href="#">北方网</a>     <a href="#">大众网</a>'+
+'<a href="#">千龙网</a>     <a href="#">西部网</a> <a href="#">浙江在线</a>   <a  href="#">每日甘肃</a> '+
+'<a href="#">中国江西</a>   <a href="#">中国江苏网</a> <a href="#">东北新闻网</a> <a  href="#">黄河新闻网</a> '+
+'<a href="#">河南报业网</a> <a href="#">山西新闻网</a> <a href="#">江西文明网</a> <a  href="#">中国西藏新闻网</a> </br> '+
+'<a href="#">东北网</a>     <a href="#">南海网</a> <a href="#">北国网</a>     <a  href="#">大河网</a> '+
+'<a href="#">华龙网</a>     <a href="#">大洋网</a> <a href="#">中安在线</a>   <a  href="#">安徽在线</a> '+
+'<a href="#">四川在线</a>   <a href="#">四川新闻网</a> <a href="#">大连天健网</a> <a  href="#">宁夏新闻网</a> '+
+'<a href="#">青海新闻网</a> <a href="#">中国西部网</a> <a href="#">中国山东网</a> <a href="#">福建东南新闻网</a>  </br> <a href="#">天山网</a> <a href="#">荆楚网</a> <a href="#">北青网</a>'+
+'<a href="#">大江网</a> <a href="#">云南网</a> <a href="#">看中国</a> <a href="#">金黔在线</a>'+
+'<a href="#">北方热线</a> <a href="#">胶东在线</a> <a href="#">新华报业网</a> <a href="#">广西新闻网</a>'+
+'<a href="#">伊型新闻网</a> <a href="#">廊坊新闻网</a> <a href="#">中国甘肃网</a> <a href="#">中国吉林</a>'+
+'<a href="#">长城</a>  <a href="#">网</a> <a href="#">内蒙古新闻网</a> </br> <a href="#">红网</a> <a href="#">华商网</a> <a href="#">今视网</a> <a href="#">延边新闻网</a>'+
+'<a href="#">河北新闻网</a> <a href="#">中国西藏网</a> </br> <a href="#">吉林新闻网</a>')
+      }
+      if (str=="tbar2"){
+      $(".maintext1").html('<a href="#">人民网</a> <a href="#">新华网</a> <a href="#">中国经济网</a><a href="#">中国广播网</a> <a href="#">央视国际</a> '+
+      '<a href="#">中国日报网</a><a href="#">光明网</a> <a href="#">中新网</a> <a href="#">中青网</a><a href="#">中国台湾网</a> <a href="#">人民搜索</a> <a href="#">盘古搜索</a>')
+      }
+      if (str=="tbar3"){
+      $(".maintext1").html('<a href="#"><b>南京</b>（玄武 白下 秦淮 建邺 鼓楼 下关 雨花台 栖霞 浦口 江宁 六合 重水 高淳）</a>'+
+'<a class="text2" href="#">     <b>无锡</b>（江阴 宜兴 楊山 惠山 滨湖 崇安 南长 北塘 新区）</a></br>'+
+'<a href="#"><b>徐州</b>（丰县 沛县 铜山 睢宁 邳州 新沂 鼓後 云龙 泉山 九里 獎汪）</a>'+
+'<a class="text2" href="#">                        <b>常州</b>（金坛 溧阳 武进 新北 天宁 钟楼 戚墅堰）</br></a>'+
+'<a href="#"><b>苏州</b>（张家港 常熟 太仓 昆山 吴江 吴中 相城 平江 沧浪 全国 高新 虔丘）</a>'+
+'<a class="text2" href="#">             <b>南通</b>（启东 海门 通州 如号 如东 海安 崇川 港闸）</br></a>'+
+'<a href="#"><b>连云港</b>（林榆 东海 灌云 灌南 新浦 连云 海州）</a>'+
+'<a class="text2" href="#">                                                   <b>淮安</b>（青河 清浦 楚州 淮阴 金湖 盱眙 洪泽 涟水）</br></a>'+
+'<a href="#"><b>盐城</b>（东台 大丰 射阳 建玥 阜宁 滨海 响水 盐都 事玥）</a>'+
+'<a class="text2" href="#">                                        <b>扬州</b>（宝应 高邮 江部 仪证 邗工广陵 维扬）</br></a>'+
+'<a href="#"><b>镇江</b>（丹阳 句容 扬中 丹徒 京口 润州）</a>'+
+'<a class="text2" href="#">                                                               <b>泰州</b>（清江秦兴 姜堰 高港 海陵 兴化）</br></a>'+
+'<a href="#"><b>宿迁</b>（泗阳 富豫 沭阳 泗洪 宿城）</a>')
+      }
+    }
+    });
+      </script>
+</body>
 </html>
