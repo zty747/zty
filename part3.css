@@ -658,18 +658,92 @@ margin-left: 15px;
 }
 /*第三部分*/
 .trimidbox3{
+    
     height: 170px;
     background-image: url(./images1/img3/2.jpg);
 }
-.trimidbox3 .center{
-    margin-top: 25px;
+.lowbox3 {
+    height: 75px;
+    width: 600px;
+    
     margin-left: 350px;
-    margin-right: 350px;
+    margin-bottom: 30px;
+    
+
 }
-.seven{
-    margin-top: 28px;
-    margin-left: 40px;
-    margin-right: 40px;
+.lowBox31{
+    display: flex;
+
+}
+.lowbox31{
+    background-image: url(./images1/img3/zxw.png);
+    height: 47px;
+    width: 142px;
+}
+.lowbox31:hover{
+    background-image: url(./images1/img3/zxw1.png);
+    height: 47px;
+    width: 142px;
+}
+.lowbox32{
+    background-image: url(./images1/img3/hms.png);
+    height: 47px;
+    width: 142px;
+}
+.lowbox32:hover{
+    background-image: url(./images1/img3/hms1.png);
+    height: 47px;
+    width: 142px;
+}
+.lowbox33{
+    background-image: url(./images1/img3/yjs.png);
+    height: 47px;
+    width: 142px;
+}
+.lowbox33:hover{
+    background-image: url(./images1/img3/yjs1.png);
+    height: 47px;
+    width: 142px;
+}
+.lowbox34{
+    background-image: url(./images1/img3/zcf.png);
+    height: 47px;
+    width: 142px;
+}
+.lowbox34:hover{
+    background-image: url(./images1/img3/zcf1.png);
+    height: 47px;
+    width: 142px;
+}
+.lowbox35{
+    background-image: url(./images1/img3/kwh.png);
+    height: 47px;
+    width: 142px;
+}
+.lowbox35:hover{
+    background-image: url(./images1/img3/kwh1.png);
+    height: 47px;
+    width: 142px;
+}
+.lowbox36{
+    background-image: url(./images1/img3/hsh.png);
+    height: 47px;
+    width: 142px;
+}
+.lowbox36:hover{
+    background-image: url(./images1/img3/hsh1.png);
+    height: 47px;
+    width: 142px;
+}
+.lowbox37{
+    background-image: url(./images1/img3/xfw.png);
+    height: 47px;
+    width: 142px;
+}
+.lowbox37:hover{
+    background-image: url(./images1/img3/xfw1.png);
+    height: 47px;
+    width: 142px;
 }
 /*第四部分*/
 .trimidBox4{
@@ -806,7 +880,7 @@ color: white;
         border: 15px solid black;
         border-image: radial-gradient(black,white,black, white,black,black) 1;
         position: relative;
-        top: 5px;
+        top: 35px;
         left: 5px;
     }
 
@@ -896,3 +970,5 @@ color: white;
     text-decoration:underline;
     color: #bb0b15;
    }
+
+   
